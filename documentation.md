@@ -1,16 +1,18 @@
 # Report
+**Research question**: "Which vocal features are most predictive of Parkinson's disease?"
+
 
 ## Introduction
 
 ### Motivation and Background
 
-The report explores the suitability of dysphonia measurements for telemonitoring Parkinson's disease, with a focus on voice disorders and dysphonia.
+....
 
 ### Reference
 
-**Title**: "Suitability of Dysphonia Measurements for Telemonitoring of Parkinson's Disease"
 
-**Author**: Max Little
+
+**Dataset owner**: Max Little
 
 **Email**: [littlem@robots.ox.ac.uk](http://robots.ox.ac.uk/)
 
@@ -19,12 +21,13 @@ Dysphonia measurements refer to a set of vocal features or measurements that are
 ## Methods
 
 ### 1. Fetch the Dataset
+Dataset ID = 174
 
 The dataset is fetched using `fetch_ucirepo(id=174)`.
 
 ### 2. Explore the Data
 
-Metadata and variable information are printed to understand the dataset. First few rows of features and targets are printed to inspect the data.
+
 
 ## Type of Machine Learning
 
