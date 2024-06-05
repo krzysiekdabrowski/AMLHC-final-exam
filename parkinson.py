@@ -20,23 +20,7 @@ y = parkinsons.data.targets
 print(parkinsons.metadata)
 
 
-# Print metadata
-#print("UCI ID:", parkinsons.metadata.uci_id)
-#print("Number of Instances:", parkinsons.metadata.num_instances)
-#print("Summary:", parkinsons.metadata.additional_info.summary)
 
-# variable information
-#print(parkinsons.variables)
-
-# Example: Display first few rows of features and targets
-print(X.head())
-print(y.head())
-
-
-
-#model = LinearRegression()
-#model.fit(X, y)
-#print("Model trained successfully.")
 
 
 # Split the data into training and testing sets
