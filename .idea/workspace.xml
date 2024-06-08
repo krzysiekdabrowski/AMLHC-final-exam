@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f1abfb2-45f7-45c6-bad4-4de48966a50b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data_exploration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation.md" afterDir="false" />
+    <list default="true" id="2f1abfb2-45f7-45c6-bad4-4de48966a50b" name="Changes" comment="first decisions made regarding model&#10;and started documenting the progress in .md file (for final evaluation report)">
+      <change afterPath="$PROJECT_DIR$/documentation/X_head.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/exploration.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logic/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parkinson.py" beforeDir="false" afterPath="$PROJECT_DIR$/parkinson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_exploration.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_exploration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/documentation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/correlation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkinson.py" beforeDir="false" afterPath="$PROJECT_DIR$/logic/parkinson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_4_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_4_3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,18 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "krzysiekdabrowski"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;krzysiekdabrowski&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/krzysiekdabrowski/AMLHC-final-exam.git",
-    "accountId": "9a28d4ec-3e18-4f96-9f6b-0ef803a80ef7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/krzysiekdabrowski/AMLHC-final-exam.git&quot;,
+    &quot;accountId&quot;: &quot;9a28d4ec-3e18-4f96-9f6b-0ef803a80ef7&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -43,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.correlation.executor": "Run",
     "Python.data_exploration.executor": "Run",
     "Python.parkinson.executor": "Run",
     "Python.task_4_3.executor": "Run",
@@ -56,6 +62,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model" />
+      <recent name="$PROJECT_DIR$/documentation" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,8 +86,26 @@
       <updated>1716294107118</updated>
       <workItem from="1716294108975" duration="2340000" />
       <workItem from="1717428354447" duration="1871000" />
-      <workItem from="1717566645843" duration="4172000" />
+      <workItem from="1717566645843" duration="6182000" />
+      <workItem from="1717765992265" duration="5057000" />
     </task>
+    <task id="LOCAL-00001" summary="first decisions made regarding model&#10;and started documenting the progress in .md file (for final evaluation report)">
+      <option name="closed" value="true" />
+      <created>1717596751963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717596751963</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first decisions made regarding model&#10;and started documenting the progress in .md file (for final evaluation report)">
+      <option name="closed" value="true" />
+      <created>1717596935820</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717596935820</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,8 +122,13 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first decisions made regarding model&#10;and started documenting the progress in .md file (for final evaluation report)" />
+    <option name="LAST_COMMIT_MESSAGE" value="first decisions made regarding model&#10;and started documenting the progress in .md file (for final evaluation report)" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mod12_task4_3$data_exploration.coverage" NAME="data_exploration Coverage Results" MODIFIED="1717595671721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mod12_task4_3$data_exploration.coverage" NAME="data_exploration Coverage Results" MODIFIED="1717841259361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mod12_task4_3$correlation.coverage" NAME="correlation Coverage Results" MODIFIED="1717842538463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Mod12_task4_3$parkinson.coverage" NAME="parkinson Coverage Results" MODIFIED="1717430198898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Mod12_task4_3$task_4_3.coverage" NAME="task_4_3 Coverage Results" MODIFIED="1716295148513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

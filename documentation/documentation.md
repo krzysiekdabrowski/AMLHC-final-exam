@@ -5,8 +5,7 @@
 ## Introduction
 
 ### Motivation and Background
-
-....
+OSA is mechanical, my thought process is that if certain anatomical features cause OSA event they may also influence the way person speaks and breaths in daytime
 
 ### Reference
 
@@ -31,4 +30,3 @@ The dataset is fetched using `fetch_ucirepo(id=174)`.
 
 ## Type of Machine Learning
 
-Supervised learning is the chosen approach because the targets are clearly labeled as 0 (no Parkinson) or 1 (Parkinson's positive). The data is labeled, making it suitable for supervised learning techniques.

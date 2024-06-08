@@ -46,7 +46,7 @@ feature_importances = pd.Series(importances, index=[f'Feature {i}' for i in rang
 print("Feature Importances:")
 print(feature_importances)
 
-# Apply the final model to the test set
+# Apply the final logic to the test set
 y_pred = best_model.predict(X_test)
 
 # confusion matrix and performance measures
