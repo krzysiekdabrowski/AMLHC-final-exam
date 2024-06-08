@@ -3,7 +3,7 @@
 ## Fetching data 
 ***script: data_exploration.py*** 
 
-![X_head.png](X_head.png)
+![X_head.png](images/X_head.png)
 
 There are no missing values. However, there are duplicated columns names.
 First step is to rename the duplicates by adding "_2" to the column name.
@@ -11,7 +11,7 @@ First step is to rename the duplicates by adding "_2" to the column name.
 ## Correlation
 ***script: correlation.py***
 
-![correlation.png](correlation.png)
+![correlation.png](images/correlation.png)
 
 ## Decisions
 
@@ -31,7 +31,7 @@ The following model were chosen for performance comparison:
 
 ### Project pattern
 
-In case this project would be further developed in the future, there will be **MVC** design pattern for clarity and logical structure.  
+In case this project would be further developed in the future, there will be a separation of concerns applied. **MVC** design pattern will be used for clarity, maintainability and scalability.  
 
 !!! Term *model* is used here in two different contexts. 'model' as machine learning algorithm and 'Model' as an element of MVC pattern.
 To prevent confusion the MVC's Model will be called further ***Logic***.
