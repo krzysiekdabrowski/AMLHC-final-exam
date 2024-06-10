@@ -33,4 +33,5 @@ The Controller manages
 - coordinating between Logic and View
 
 # TODO
-introduce classes and objects (OOP)
+1. introduce classes and objects (OOP)
+2. write comments for functions, methods, files 
