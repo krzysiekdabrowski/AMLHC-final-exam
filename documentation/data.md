@@ -17,6 +17,15 @@ Dysphonia is a medical term that refers to difficulty or impairment in voice pro
 
 In individuals with Parkinson's disease, their vocal measurements may indicate dysphonia-related voice irregularities. Inn healthy individuals, the same measurements may contain data reflecting normal voice characteristics without dysphonia.
 
+## Publication summary
+
+The publication presents an evaluation of traditional and novel measures to distinguish healthy individuals from those with Parkinson's disease (PD) by detecting dysphonia. A new measure called Pitch Period Entropy (PPE) is introduced, designed to be robust to confounding effects like noisy environments.
+
+They achieved 91.4% correct classification using a kernel support vector machine. The study concludes that non-standard methods are most effective in distinguishing between healthy and PD subjects. 
+It explores various speech measurement methods and their applications in assessing dysphonia, focusing on sustained phonation tests. The data, consisting of sustained vowel phonations from male and female subjects with varying PD stages and years since diagnosis, were recorded using a microphone and processed for analysis.
+
+The publication and dataset published contribute to understanding of dysphonia in PD and provide insights into developing reliable telemedicine tools for remote patient monitoring.
+
 ## Fetching 
 ***script: data_exploration.py*** 
 
@@ -25,11 +34,20 @@ In individuals with Parkinson's disease, their vocal measurements may indicate d
 
 ![X_head.png](images/X_head.png)
 
+Values found range from -10.0 to 200.0
+There are no missing values. 
+There are duplicated columns names.
+
+
 ## Processing 
 ***script: logic.data_processing.py*** 
 
-There are no missing values. However, there are duplicated columns names.
+
 First step is to rename the duplicates by adding "_2" to the column name.
+
+The values of each measure are pre-processed by scaling them to occupy the numerical range [-1, 1]
+
+How to augment this dataset?
 
 ## Correlation
 ***script: correlation.py***
@@ -44,12 +62,4 @@ Once the data was understood and explored the following decisions were made:
 
 Supervised learning is the chosen approach because the targets are clearly labeled as 0 (no Parkinson) or 1 (Parkinson's positive). The data is labeled, making it suitable for supervised learning techniques.
 
-### Models for comparison
-
-The following model were chosen for performance comparison:
-
-- logistic regression
-- random forest
-- deep neural network
-- maybe: support vector machines(SVM) 
 

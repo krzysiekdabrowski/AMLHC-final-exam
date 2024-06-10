@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f1abfb2-45f7-45c6-bad4-4de48966a50b" name="Changes" comment="added basic MVC structure">
-      <change afterPath="$PROJECT_DIR$/documentation/code.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/data.md" afterDir="false" />
+    <list default="true" id="2f1abfb2-45f7-45c6-bad4-4de48966a50b" name="Changes" comment="documentation update">
+      <change afterPath="$PROJECT_DIR$/documentation/images/regression_confusion_matrix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/images/regression_features.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logic/random_forest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logic/regression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bias.pages" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bias.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/documentation.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/report.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/exploration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_exploration.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_exploration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/code.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/code.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/data.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/data.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/report.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/report.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/logic/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/plots.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +57,11 @@
     "Python.main.executor": "Run",
     "Python.parkinson.executor": "Run",
     "Python.plots.executor": "Run",
+    "Python.regression.executor": "Run",
     "Python.task_4_3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/krzysztofdabrowski/Documents/Projekty/RespireLabs/STUDIA/Semester 2/Mod12_task4_3/documentation/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,9 +71,12 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/logic" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/documentation/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/documentation/images" />
+      <recent name="$PROJECT_DIR$/logic" />
       <recent name="$PROJECT_DIR$/model" />
       <recent name="$PROJECT_DIR$/documentation" />
     </key>
@@ -90,7 +100,9 @@
       <workItem from="1716294108975" duration="2340000" />
       <workItem from="1717428354447" duration="1871000" />
       <workItem from="1717566645843" duration="6182000" />
-      <workItem from="1717765992265" duration="10525000" />
+      <workItem from="1717765992265" duration="14699000" />
+      <workItem from="1717929359551" duration="1616000" />
+      <workItem from="1718001734021" duration="9578000" />
     </task>
     <task id="LOCAL-00001" summary="first decisions made regarding model&#10;and started documenting the progress in .md file (for final evaluation report)">
       <option name="closed" value="true" />
@@ -124,7 +136,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717846685555</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="documentation update">
+      <option name="closed" value="true" />
+      <created>1717850356146</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717850356146</updated>
+    </task>
+    <task id="LOCAL-00006" summary="documentation update">
+      <option name="closed" value="true" />
+      <created>1717850370471</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717850370471</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,15 +173,17 @@
     <MESSAGE value="first decisions made regarding model&#10;and started documenting the progress in .md file (for final evaluation report)" />
     <MESSAGE value="calculating correlation" />
     <MESSAGE value="added basic MVC structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="added basic MVC structure" />
+    <MESSAGE value="documentation update" />
+    <option name="LAST_COMMIT_MESSAGE" value="documentation update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mod12_task4_3$data_exploration.coverage" NAME="data_exploration Coverage Results" MODIFIED="1717848484339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mod12_task4_3$data_exploration.coverage" NAME="data_exploration Coverage Results" MODIFIED="1718018246223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mod12_task4_3$regression.coverage" NAME="regression Coverage Results" MODIFIED="1718018552940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/logic" />
     <SUITE FILE_PATH="coverage/Mod12_task4_3$correlation.coverage" NAME="correlation Coverage Results" MODIFIED="1717842538463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Mod12_task4_3$controller.coverage" NAME="controller Coverage Results" MODIFIED="1717846416828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/controller" />
     <SUITE FILE_PATH="coverage/Mod12_task4_3$parkinson.coverage" NAME="parkinson Coverage Results" MODIFIED="1717430198898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Mod12_task4_3$plots.coverage" NAME="plots Coverage Results" MODIFIED="1717846621337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
-    <SUITE FILE_PATH="coverage/Mod12_task4_3$main.coverage" NAME="main Coverage Results" MODIFIED="1717846627735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mod12_task4_3$plots.coverage" NAME="plots Coverage Results" MODIFIED="1718018401853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Mod12_task4_3$main.coverage" NAME="main Coverage Results" MODIFIED="1718020668597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Mod12_task4_3$task_4_3.coverage" NAME="task_4_3 Coverage Results" MODIFIED="1716295148513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
